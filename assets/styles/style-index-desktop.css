@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #414148;
+    background: url('../images/pexels-photo-97076.jpeg') center center no-repeat fixed;
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+#header {
+    padding-top: 3.12rem;
+    padding-bottom: 3rem;
+    height: 93vh;
+    text-align: center;
+}
+
+header img.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #fff;
+}
+
+header h1.name {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+hr {
+    width: 8%;
+    margin: 2rem auto;
+}
+
+header hr {
+    border: 2px solid #fff;
+}
+
+header p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.4rem 2rem;
+    font-weight: 700;
+    background: rgba(45, 166, 142, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+header a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.btn-open {
+    background: rgba(45, 166, 142, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+    /* text-transform: uppercase; */
+    border: none;
+    padding: 1rem 1.2rem;
+    font-weight: bold;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.btn-open:hover {
+    opacity: 0.9;
+}
+
+.menu-icon,
+.close-icon {
+    width: 1.6rem;
+    margin-left: 1.6rem;
+}
+
+.side-nav {
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: width 0.4s;
+    width: 0;
+    list-style-type: none;
+}
+
+.side-nav a {
+    padding: 1rem 1rem 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: rgba(45, 166, 142, 1);
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.btn-close:hover {
+    opacity: 0.7;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+    display: inline-block;
+    padding: 1rem;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4.8rem 9.6rem;
+}
+
+#about {
+    padding-top: 4.8rem;
+    height: 100vh;
+}
+
+main h1 {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+main hr {
+    border: 2px solid rgba(45, 166, 142, 0.6);
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.76rem;
+    margin-top: 2.4rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+main a {
+    text-decoration: none;
+    color: rgba(45, 166, 142, 1);
+}
+
+main a:hover {
+    text-decoration: underline double;
+}
+
+main #skills {
+    padding-top: 4.8rem;
+}
+
+#skills .skills-svg {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#skills .text-center {
+    flex-basis: 150px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#skills .skill-learn {
+    margin: 4rem 0;
+}
+
+#skills figcaption {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#contact form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.input-field input {
+    flex-basis: 250px;
+}
+
+#contact input[type=text],
+input[type=email],
+#contact textarea {
+    display: block;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 10px;
+    background: #c4c4c4 !important;
+    outline: none;
+    transition: all .3s ease-in-out;
+    border: 2px solid #DDDDDD;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border: 2px solid rgba(45, 166, 142, 0.6);
+    /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
+}
+
+#contact textarea {
+    height: auto;
+    width: 500px;
+}
+
+input[type="submit"] {
+    background: rgba(45, 166, 142, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 1.7rem;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 1.7rem;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 1.7rem;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 1.7rem;
+}
