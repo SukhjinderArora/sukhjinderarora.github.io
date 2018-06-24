@@ -152,7 +152,7 @@ main {
 }
 
 #about {
-    padding-top: 4.8rem;
+    padding-top: 6.8rem;
     /* height: 100vh; */
 }
 
@@ -189,7 +189,7 @@ main a:hover {
 }
 
 main #skills {
-    padding-top: 4.8rem;
+    padding-top: 6.8rem;
     padding-bottom: 4.8rem;
 }
 
@@ -213,6 +213,10 @@ main #skills {
     font-size: 1.6rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
+}
+
+#contact {
+    padding-top: 6.8rem;
 }
 
 #contact form {
@@ -352,6 +356,9 @@ svg.social-icon:hover {
     #about {
         padding-top: 4.8rem;
         padding-bottom: 6rem;
+    }
+    main #skills {
+        padding-top: 4.8rem;
     }
     main hr {
         border: 2px solid rgba(45, 166, 142, 0.6);

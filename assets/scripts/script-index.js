@@ -1,12 +1,13 @@
 var menuButton=document.getElementById("menu-btn");
 var closeButton=document.getElementById("close-btn");
+var sideMenu = document.getElementById("side-menu");
 
 menuButton.addEventListener("click",function(){
-    document.getElementById("side-menu").style.width = '250px';
+   sideMenu.style.width = '250px';
 
 });
 closeButton.addEventListener("click",function(){
-    document.getElementById("side-menu").style.width = '0';
+    sideMenu.style.width = '0';
 
 });
 
@@ -22,6 +23,7 @@ $(document).ready(function(){
             },
             700
         );
+        sideMenu.style.width= '0';
         
     });
 
