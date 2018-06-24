@@ -43,7 +43,7 @@ $(document).ready(function(){
                         $(".ajaxForm").trigger("reset");
                         window.setTimeout(function(){
                             afterSubmit.style.opacity = "0";
-                        },3000);
+                        },6000);
 
                     } else {
                         alert("An error occured: " + response.message);
