@@ -1,6 +1,7 @@
 var menuButton=document.getElementById("menu-btn");
 var closeButton=document.getElementById("close-btn");
 var sideMenu = document.getElementById("side-menu");
+var afterSubmit=document.getElementById("after-submit");
 
 menuButton.addEventListener("click",function(){
    sideMenu.style.width = '250px';
@@ -27,9 +28,6 @@ $(document).ready(function(){
         
     });
 
-
-
-
     $(function () {
         $(".ajaxForm").submit(function (e) {
             e.preventDefault();
@@ -41,7 +39,12 @@ $(document).ready(function(){
                 data: $(this).serialize(),
                 success: function (response) {
                     if (response.status == "success") {
-                        alert("We received your submission, thank you!");
+                        afterSubmit.style.opacity="1";
+                        $(".ajaxForm").trigger("reset");
+                        window.setTimeout(function(){
+                            afterSubmit.style.opacity = "0";
+                        },3000);
+
                     } else {
                         alert("An error occured: " + response.message);
                     }

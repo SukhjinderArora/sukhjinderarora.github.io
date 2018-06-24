@@ -294,6 +294,27 @@ header .social a {
     margin-right: 1.5rem;
 }
 
+#contact #after-submit {
+    opacity: 0;
+    text-align: center;
+    margin: 2rem auto;
+    background: rgba(45, 166, 142, 0.8);
+    color: #fff;
+    width: 150px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    transition: opacity 0.3s;
+}
+
+#after-submit p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+
 .social {
     text-align: center;
     margin-bottom: 2rem;
