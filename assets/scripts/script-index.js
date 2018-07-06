@@ -1,35 +1,36 @@
-var menuButton=document.getElementById("menu-btn");
-var closeButton=document.getElementById("close-btn");
-var sideMenu = document.getElementById("side-menu");
-var afterSubmit=document.getElementById("after-submit");
+"use strict";
 
-menuButton.addEventListener("click",function(){
-   sideMenu.style.width = '250px';
+let menuButton = document.getElementById("menuBtn");
+let closeButton=document.getElementById("closeBtn");
+let sideNav=document.getElementById("sideNav");
+let afterSubmit = document.getElementById("submitSuccess");
 
-});
-closeButton.addEventListener("click",function(){
-    sideMenu.style.width = '0';
 
-});
+function toggleSideMenu() {
+    sideNav.classList.toggle("isActive");
+}
 
-$(document).ready(function(){
+menuButton.addEventListener("click",toggleSideMenu);
 
-    $(".nav-bar > ul > li > .nav-link, .know-more, #about a").click(function (e) {
-        e.preventDefault();
+closeButton.addEventListener("click", toggleSideMenu);
+
+
+$(document).ready(function () {
+
+    $(".navBar__link, .profile__link, .content__link--contact").click(
+      function(e) {
         var curLink = $(this);
         var scrollPoint = $(curLink.attr("href")).position().top;
-        $("body,html").animate(
-            {
-                scrollTop: scrollPoint
-            },
-            700
-        );
-        sideMenu.style.width= '0';
-        
-    });
+        $("body,html").animate({ scrollTop: scrollPoint }, 700);
+          if (curLink.hasClass("navBar__link")) {
+            toggleSideMenu();
+          }
+            
+      }
+    );
 
     $(function () {
-        $(".ajaxForm").submit(function (e) {
+        $(".js-ContactForm").submit(function (e) {
             e.preventDefault();
             var href = $(this).attr("action");
             $.ajax({
@@ -39,11 +40,11 @@ $(document).ready(function(){
                 data: $(this).serialize(),
                 success: function (response) {
                     if (response.status == "success") {
-                        afterSubmit.style.opacity="1";
-                        $(".ajaxForm").trigger("reset");
-                        window.setTimeout(function(){
+                        afterSubmit.style.opacity = "1";
+                        $(".js-ContactForm").trigger("reset");
+                        window.setTimeout(function () {
                             afterSubmit.style.opacity = "0";
-                        },6000);
+                        }, 6000);
 
                     } else {
                         alert("An error occured: " + response.message);
