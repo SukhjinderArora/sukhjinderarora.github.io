@@ -341,6 +341,9 @@ body {
     .profile__name {
         font-size: 3.75rem;
     }
+    .profile hr {
+        border-width: 2px;
+    }
     .content {
         padding: 1.875rem 6.25rem;
     }
