@@ -30,7 +30,7 @@ $(document).ready(function () {
     );
 
     $(function () {
-        $(".js-ContactForm").submit(function (e) {
+        $(".js-contactForm").submit(function (e) {
             e.preventDefault();
             var href = $(this).attr("action");
             $.ajax({
@@ -41,7 +41,7 @@ $(document).ready(function () {
                 success: function (response) {
                     if (response.status == "success") {
                         afterSubmit.style.opacity = "1";
-                        $(".js-ContactForm").trigger("reset");
+                        $(".js-contactForm").trigger("reset");
                         window.setTimeout(function () {
                             afterSubmit.style.opacity = "0";
                         }, 6000);

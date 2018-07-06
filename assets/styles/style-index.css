@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #333;
+    background-color: var(--textColorBlack);
 }
 
 /* 
@@ -81,7 +81,7 @@ body {
 }
 
 .navBar__link:hover {
-    color: #fff;
+    color: var(--textColorWhite);
 }
 
 .navBar__btnClose {
@@ -104,6 +104,7 @@ body {
 .navBar__btnClose:hover .navBar__closeIcon {
     opacity: 0.8;
 }
+
 /* 
     Header section
 */
@@ -128,17 +129,17 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     margin: 0;
-    color: #fff;
+    color: var(--textColorWhite);
 }
 
 .profile hr {
     margin: 1.25rem auto;
     width: 8%;
-    border: 1px solid #fff;
+    border: 1px solid var(--textColorWhite);
 }
 
 .profile__profession {
-    color: #fff;
+    color: var(--textColorWhite);
     text-transform: uppercase;
     font-weight: 700;
 }
