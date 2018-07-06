@@ -205,6 +205,10 @@ body {
     text-align: justify;
 }
 
+.textCenter {
+    text-align: center;
+}
+
 .content__link {
     color: var(--secondaryColor);
     text-decoration: none;
