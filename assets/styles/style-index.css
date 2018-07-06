@@ -144,6 +144,10 @@ body {
     font-weight: 700;
 }
 
+.socialMedia a {
+    text-decoration: none;
+}
+
 .socialMedia__icon {
     color: #9e989e;
     font-size: 1.75rem;
