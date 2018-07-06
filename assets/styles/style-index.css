@@ -344,6 +344,13 @@ body {
         flex-basis: 140px;
         margin-bottom: 3.125rem;
     }
+    .inputFields {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .input {
+        flex-basis: 49.3%;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -359,12 +366,5 @@ body {
     }
     .logo {
         width: 120px;
-    }
-    .inputFields {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .input {
-        flex-basis: 295px;
     }
 }
