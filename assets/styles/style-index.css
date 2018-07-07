@@ -366,7 +366,7 @@ body {
         background-size: cover;
     }
     .profile {
-        height: 87vh;
+        min-height: 87vh;
     }
     .flexParent__skill {
         flex-basis: 141px;
