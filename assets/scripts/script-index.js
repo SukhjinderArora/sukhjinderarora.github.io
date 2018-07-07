@@ -1,21 +1,19 @@
 "use strict";
 
-let menuButton = document.getElementById("menuBtn");
-let closeButton=document.getElementById("closeBtn");
-let sideNav=document.getElementById("sideNav");
-let afterSubmit = document.getElementById("submitSuccess");
-
-
-function toggleSideMenu() {
-    sideNav.classList.toggle("isActive");
-}
-
-menuButton.addEventListener("click",toggleSideMenu);
-
-closeButton.addEventListener("click", toggleSideMenu);
-
-
 $(document).ready(function () {
+
+    let menuButton = document.getElementById("menuBtn");
+    let closeButton = document.getElementById("closeBtn");
+    let sideNav = document.getElementById("sideNav");
+    let afterSubmit = document.getElementById("submitSuccess");
+
+
+    function toggleSideMenu() {
+        sideNav.classList.toggle("isActive");
+    }
+
+    menuButton.addEventListener("click", toggleSideMenu);
+    closeButton.addEventListener("click", toggleSideMenu);
 
     $(".navBar__link, .profile__link, .content__link--contact").click(
       function(e) {
