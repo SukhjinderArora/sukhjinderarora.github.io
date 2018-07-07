@@ -6,12 +6,13 @@
     --sectionHeading: #444;
     --textColorBlack: #333;
     --textColorWhite: #fff;
-    font-size: 100%;
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--textColorBlack);
+    font-size: 1.6rem;
 }
 
 /* 
@@ -22,11 +23,11 @@ body {
     background: var(--primaryColor);
     color: rgba(255, 255, 255, 0.8);
     border: 0;
-    padding: 0.625rem 0.75rem;
+    padding: 1rem 1.2rem;
     font-weight: bold;
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 2rem;
+    top: 2rem;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -39,11 +40,11 @@ body {
 
 .navBar__hamburger,
 .navBar__closeIcon {
-    width: 1rem;
+    width: 1.6rem;
 }
 
 .navBar__hamburger {
-    margin-left: 1rem;
+    margin-left: 1.6rem;
 }
 
 .navBar__menu {
@@ -56,7 +57,7 @@ body {
     opacity: 0.9;
     overflow-x: hidden;
     padding: 0;
-    padding-top: 4rem;
+    padding-top: 6.4rem;
     margin: 0;
     transition: width 0.4s;
     width: 0;
@@ -64,14 +65,14 @@ body {
 }
 
 .isActive {
-    width: 200px;
+    width: 20rem;
 }
 
 .navBar__link {
-    padding: 1rem 0;
-    padding-left: 2rem;
+    padding: 1.6rem 0;
+    padding-left: 3.2rem;
     text-decoration: none;
-    font-size: 1.12rem;
+    font-size: 1.8rem;
     color: rgba(45, 166, 142, 1);
     display: block;
     transition: 0.3s;
@@ -86,19 +87,19 @@ body {
 
 .navBar__btnClose {
     position: absolute;
-    top: 0.625rem;
-    right: 1rem;
+    top: 1rem;
+    right: 1.6rem;
     padding: 0;
     margin: 0;
     background: none;
     border: 0;
-    padding: 0.8rem;
+    padding: 1.3rem;
     cursor: pointer;
 }
 
 .navBar__closeIcon {
     color: var(--secondaryColor);
-    font-size: 1.375rem;
+    font-size: 2.2rem;
 }
 
 .navBar__btnClose:hover .navBar__closeIcon {
@@ -112,20 +113,20 @@ body {
 .profile {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top: 5.625rem;
-    margin-bottom: 2.5rem;
+    padding-top: 9rem;
+    margin-bottom: 4rem;
 }
 
 .profile__image {
-    width: 200px;
+    width: 20rem;
     border-radius: 50%;
     border: 3px solid var(--textColorWhite);
     box-sizing: content-box;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .profile__name {
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 800;
     margin: 0;
@@ -133,7 +134,7 @@ body {
 }
 
 .profile hr {
-    margin: 1.25rem auto;
+    margin: 2rem auto;
     width: 8%;
     border: 1px solid var(--textColorWhite);
 }
@@ -150,8 +151,8 @@ body {
 
 .socialMedia__icon {
     color: #9e989e;
-    font-size: 1.75rem;
-    margin-right: 1rem;
+    font-size: 2.8rem;
+    margin-right: 1.6rem;
 }
 
 .socialMedia__icon:hover {
@@ -160,8 +161,8 @@ body {
 
 .profile__link {
     display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem 1.375rem;
+    margin-top: 2.4rem;
+    padding: 1.6rem 2.2rem;
     font-weight: 700;
     background-color: var(--primaryColor);
     color: var(--textColorWhite);
@@ -180,9 +181,9 @@ body {
 
 .content {
     background-color: rgba(230, 230, 230, 0.88);
-    padding: 1.875rem;
+    padding: 3rem;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 90rem;
 }
 
 .content hr {
@@ -198,7 +199,7 @@ body {
 }
 
 .content__para {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     color: var(--textColorBlack);
     line-height: 1.8;
     letter-spacing: 1px;
@@ -219,7 +220,7 @@ body {
 }
 
 .paddingTop {
-    padding-top: 3.125rem;
+    padding-top: 5rem;
 }
 
 /* 
@@ -230,19 +231,19 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 3.125rem;
+    margin-top: 5rem;
 }
 
 .flexParent__skill {
-    flex-basis: 100px;
+    flex-basis: 10rem;
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 1.875rem;
+    margin-bottom: 3rem;
 }
 
 .logo {
-    width: 100px;
+    width: 10rem;
 }
 
 /* 
@@ -250,23 +251,23 @@ body {
 */
 
 .contactForm {
-    max-width: 600px;
+    max-width: 60rem;
     width: 100%;
     margin: 0 auto;
-    margin-top: 1.875rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
 .inputFields {
-    max-width: 600px;
+    max-width: 60rem;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .contactForm__input {
-    padding: 0.625rem;
-    margin-bottom: 0.625rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     background: #c4c4c4;
     border: 2px solid transparent;
     outline: 0;
@@ -278,7 +279,7 @@ body {
 }
 
 .textBox {
-    max-width: 600px;
+    max-width: 60rem;
     width: 100%;
 }
 
@@ -286,7 +287,7 @@ body {
     background: var(--secondaryColor);
     color: #f3f3f3;
     border: 0;
-    padding: 0.625rem 1rem;
+    padding: 1rem 1.6rem;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -307,7 +308,7 @@ body {
     display: inline-block;
     border-radius: 2px;
     text-transform: uppercase;
-    padding: 0.625rem 1rem;
+    padding: 1rem 1.6rem;
 }
 
 /* 
@@ -316,12 +317,12 @@ body {
 
 .footer {
     text-align: center;
-    padding: 2.5rem 0;
+    padding: 4rem 0;
 }
 
 .copyright {
     color: #9e989e;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
 }
 
 /* 
@@ -330,26 +331,26 @@ body {
 
 @media screen and (min-width:360px) {
     .flexParent__skill {
-        flex-basis: 130px;
+        flex-basis: 13rem;
     }
 }
 
 @media screen and (min-width: 768px) {
     .profile {
-        padding-top: 2.18rem;
+        padding-top: 3.5rem;
     }
     .profile__name {
-        font-size: 3.75rem;
+        font-size: 6rem;
     }
     .profile hr {
         border-width: 2px;
     }
     .content {
-        padding: 1.875rem 6.25rem;
+        padding: 3rem 10rem;
     }
     .flexParent__skill {
         flex-basis: 140px;
-        margin-bottom: 3.125rem;
+        margin-bottom: 5rem;
     }
     .inputFields {
         flex-direction: row;
@@ -369,9 +370,9 @@ body {
         min-height: 87vh;
     }
     .flexParent__skill {
-        flex-basis: 141px;
+        flex-basis: 14.1rem;
     }
     .logo {
-        width: 120px;
+        width: 12rem;
     }
 }
