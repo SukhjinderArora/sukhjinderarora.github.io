@@ -26,8 +26,8 @@ body {
     padding: 1rem 1.2rem;
     font-weight: bold;
     position: fixed;
-    right: 1rem;
-    top: 1rem;
+    right: 0.4rem;
+    top: 0.6rem;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -113,8 +113,9 @@ body {
 .profile {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     margin-bottom: 4rem;
+    min-height: 100vh;
 }
 
 .profile__image {
