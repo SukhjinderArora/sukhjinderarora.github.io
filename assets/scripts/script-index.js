@@ -7,6 +7,7 @@ $(document).ready(function () {
     let sideNav = document.getElementById("sideNav");
     let afterSubmit = document.getElementById("submitSuccess");
 
+    // Toggle Side Menu
 
     function toggleSideMenu() {
         sideNav.classList.toggle("isActive");
@@ -14,6 +15,8 @@ $(document).ready(function () {
 
     menuButton.addEventListener("click", toggleSideMenu);
     closeButton.addEventListener("click", toggleSideMenu);
+
+    // Smooth Scroll when navigating by clicking on links
 
     $(".navBar__link, .profile__link, .content__link--contact").click(
       function(e) {
@@ -26,6 +29,8 @@ $(document).ready(function () {
             
       }
     );
+
+    // Form Submission using AJAX
 
     $(function () {
         $(".js-contactForm").submit(function (e) {

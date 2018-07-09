@@ -21,13 +21,13 @@ body {
 
 .navBar__btnMenu {
     background: var(--primaryColor);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--textColorWhite);
     border: 0;
     padding: 1rem 1.2rem;
     font-weight: bold;
     position: fixed;
-    right: 0.4rem;
-    top: 0.6rem;
+    right: 1rem;
+    top: 1rem;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -113,17 +113,17 @@ body {
 .profile {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 5rem;
     margin-bottom: 4rem;
-    min-height: 100vh;
 }
 
 .profile__image {
-    width: 20rem;
+    width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--textColorWhite);
     box-sizing: content-box;
     margin-bottom: 1.6rem;
+    /* margin-top: 1rem; */
 }
 
 .profile__name {
@@ -232,7 +232,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .flexParent__skill {
@@ -331,20 +331,21 @@ body {
 */
 
 @media screen and (min-width:360px) {
-
     .flexParent__skill {
         flex-basis: 13rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-
     .navBar__btnMenu {
         right: 2rem;
         top: 2rem;
     }
     .profile {
         padding-top: 3.5rem;
+    }
+    .profile__image {
+        width: 20rem;
     }
     .profile__name {
         font-size: 6rem;
