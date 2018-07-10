@@ -21,7 +21,7 @@ body {
 
 .navBar__btnMenu {
     background: var(--primaryColor);
-    color: var(--textColorWhite);
+    color: rgba(255, 255, 255, .8);
     border: 0;
     padding: 1rem 1.2rem;
     font-weight: bold;
@@ -165,7 +165,7 @@ body {
     padding: 1.6rem 2.2rem;
     font-weight: 700;
     background-color: var(--primaryColor);
-    color: var(--textColorWhite);
+    color: rgba(255, 255, 255, .9);
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color .3s;
@@ -204,6 +204,7 @@ body {
     line-height: 1.8;
     letter-spacing: 1px;
     text-align: justify;
+    margin-bottom: 3rem;
 }
 
 .textCenter {
@@ -375,9 +376,6 @@ body {
     }
     .profile {
         min-height: 87vh;
-    }
-    .aboutMe {
-        min-height: 100vh;
     }
     .flexParent__skill {
         flex-basis: 14.1rem;
