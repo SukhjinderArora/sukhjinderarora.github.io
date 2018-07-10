@@ -123,7 +123,6 @@ body {
     border: 3px solid var(--textColorWhite);
     box-sizing: content-box;
     margin-bottom: 1.6rem;
-    /* margin-top: 1rem; */
 }
 
 .profile__name {
@@ -378,7 +377,7 @@ body {
         min-height: 87vh;
     }
     .aboutMe {
-        height: 100vh;
+        min-height: 100vh;
     }
     .flexParent__skill {
         flex-basis: 14.1rem;
