@@ -285,7 +285,7 @@ body {
 }
 
 .contactForm__submit {
-    background: var(--secondaryColor);
+    background: var(--primaryColor);
     color: #f3f3f3;
     border: 0;
     padding: 1rem 1.6rem;
