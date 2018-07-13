@@ -350,6 +350,9 @@ body {
     .profile__name {
         font-size: 6rem;
     }
+    .profile__profession {
+        font-size: 1.8rem;
+    }
     .profile hr {
         border-width: 2px;
     }
