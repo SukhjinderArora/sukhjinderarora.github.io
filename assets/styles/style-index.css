@@ -12,7 +12,10 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--textColorBlack);
-    background: url("../images/background-images/image-background.jpg") no-repeat center center fixed;
+    background-image: url("../images/background-images/image-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     font-size: 1.6rem;
 }
