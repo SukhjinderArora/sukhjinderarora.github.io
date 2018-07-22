@@ -12,7 +12,8 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--textColorBlack);
-    background-color: #6f7577;
+    background: url("../images/background-images/image-background.jpg") no-repeat center center fixed;
+    background-size: cover;
     font-size: 1.6rem;
 }
 
@@ -150,7 +151,7 @@ body {
 }
 
 .socialMedia__icon {
-    color: #d6d6d6;
+    color: #9e989e;
     font-size: 2.8rem;
     margin-right: 1.6rem;
 }
@@ -373,15 +374,8 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-    body {
-        background: url("../images/background-images/image-background.jpg") no-repeat center center fixed;
-        background-size: cover;
-    }
     .profile {
         min-height: 87vh;
-    }
-    .socialMedia__icon {
-        color: #9e989e;
     }
     .flexParent__skill {
         flex-basis: 14.1rem;
