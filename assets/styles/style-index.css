@@ -365,7 +365,7 @@ body {
     }
     .flexParent__skill {
         flex-basis: 140px;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .inputFields {
         flex-direction: row;
@@ -384,6 +384,6 @@ body {
         flex-basis: 14.1rem;
     }
     .logo {
-        width: 12rem;
+        width: 10rem;
     }
 }
