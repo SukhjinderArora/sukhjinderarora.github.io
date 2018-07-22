@@ -42,7 +42,6 @@ $(document).ready(function () {
                 url: href,
                 data: $(this).serialize(),
                 success: function (response) {
-                    console.log(response);
                     if (response.status == "success") {
                         afterSubmit.style.opacity = "1";
                         $(".js-contactForm").trigger("reset");
