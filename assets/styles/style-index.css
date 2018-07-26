@@ -12,11 +12,6 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--textColorBlack);
-    background-image: url("../images/background-images/image-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     font-size: 1.6rem;
 }
 
@@ -344,6 +339,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        background-image: url("../images/background-images/image-background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
     .navBar__btnMenu {
         right: 2rem;
         top: 2rem;
