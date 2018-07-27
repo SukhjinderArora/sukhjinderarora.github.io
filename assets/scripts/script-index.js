@@ -9,7 +9,7 @@ const navBarLinks = document.getElementsByClassName("navBar__link");
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 550,
   easing: "easeInOutQuad"
-})
+});
 
 // Toggle Side Menu
 
