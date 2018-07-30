@@ -4,7 +4,8 @@ const menuButton = document.getElementById("menuBtn");
 const closeButton = document.getElementById("closeBtn");
 const sideNav = document.getElementById("sideNav");
 const afterSubmit = document.getElementById("submitSuccess");
-const navBarLinks = document.getElementsByClassName("navBar__link");
+const navBarLinks = document.querySelectorAll(".navBar__link");
+const form = document.getElementById("ajaxForm");
 
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 550,
@@ -13,24 +14,25 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 
 // Toggle Side Menu
 
-function toggleSideMenu() {
+function toggleSideMenu(event) {
   sideNav.classList.toggle("isActive");
 }
 
 menuButton.addEventListener("click", toggleSideMenu);
+
 closeButton.addEventListener("click", toggleSideMenu);
 
-Array.from(navBarLinks).forEach(link =>
+navBarLinks.forEach(link =>
   link.addEventListener("click", toggleSideMenu)
 );
 
 // Form Submission using AJAX
 
-const form = document.getElementById("ajaxForm");
-const url = form.getAttribute("action");
-
 form.addEventListener("submit", function(event) {
+  
   event.preventDefault();
+  const url = this.action;
+
   fetch(url, {
     method: "POST",
     mode: "no-cors",
@@ -50,4 +52,5 @@ form.addEventListener("submit", function(event) {
     .catch(error => {
       alert("Something went wrong!!");
     });
+
 });
