@@ -9,7 +9,8 @@ const form = document.getElementById("ajaxForm");
 
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 550,
-  easing: "easeInOutQuad"
+  easing: 'easeInOutQuad',
+  updateURL: false // Update the URL on scroll
 });
 
 // Toggle Side Menu
