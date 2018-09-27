@@ -281,8 +281,9 @@ body {
     border: 2px solid var(--secondaryColor);
 }
 
-.textBox {
-    max-width: 60rem;
+.textBox,
+.subject {
+    /* max-width: 60rem; */
     width: 100%;
 }
 
