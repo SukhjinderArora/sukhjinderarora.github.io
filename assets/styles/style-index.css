@@ -313,7 +313,7 @@ body {
   color: #f3f3f3;
   display: inline-block;
   border-radius: 2px;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 1rem 1.6rem;
 }
 

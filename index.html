@@ -14,6 +14,8 @@
     <title>Sukhjinder Arora | Web Developer</title>
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/style-index.css">
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit" async defer></script>
 </head>
 
 <body>
@@ -245,12 +247,15 @@
 
                     <textarea name="message" id="message" class="contactForm__input textBox" cols="30" rows="10" placeholder="Message" required></textarea>
 
+                    <div id="g-recaptcha"></div>
+                    <br />
+
                     <input type="submit" name="submit" value="Send Message" class="contactForm__submit">
 
                 </form>
 
                 <div id="submitSuccess" class="successBox">
-                    <p class="successMsg">Message Sent!</p>
+                    <p class="successMsg" id="successMsg">Message Sent!</p>
                 </div>
             </section>
         </div>
